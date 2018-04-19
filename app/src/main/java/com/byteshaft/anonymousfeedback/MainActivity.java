@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText etFeedback;
     private String feedbackString;
     private Button sendButton;
-    private final int TIMES_CSS_CODE = 0;
+    private final int TIMES_LLB_CODE = 0;
 
     @SuppressLint("HardwareIds")
     @Override
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         sendButton = findViewById(R.id.button_send);
         sendButton.setOnClickListener(view -> {
             if (validate()) {
-                sendFeedback(android_id, feedbackString, TIMES_CSS_CODE);
+                sendFeedback(android_id, feedbackString, TIMES_LLB_CODE);
             }
         });
     }
